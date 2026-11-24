@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Home — Linux Monitor{% endblock %}
+{% block content %}
+<section class="panel">
+  <h1>Linux Monitor</h1>
+  <p class="lead">
+    Demo dashboard for live Linux server metrics (CPU, memory, disk, load, network, ports).
+    Monitoring views are read-only.
+  </p>
+  <p><a href="{{ url_for('main.dashboard') }}">Open dashboard</a></p>
+</section>
+{% endblock %}

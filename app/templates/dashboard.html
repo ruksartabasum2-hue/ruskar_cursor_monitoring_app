@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — Linux Monitor{% endblock %}
+{% block content %}
+<section class="panel">
+  <h1>Dashboard <span class="badge">Read-only</span></h1>
+  <p class="lead">
+    Server metrics will appear here. Inventory and live SSH collection are not wired yet
+    (stub table).
+  </p>
+  <div class="table-wrap">
+    <table class="data">
+      <thead>
+        <tr>
+          <th>Server</th>
+          <th>Status</th>
+          <th>CPU</th>
+          <th>Memory</th>
+          <th>Disk</th>
+          <th>Load</th>
+          <th>Network</th>
+          <th>Ports</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="muted" colspan="8">No servers configured yet.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}
